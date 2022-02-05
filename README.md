@@ -6,10 +6,10 @@ Dev.: Tito Delerino Filho
 
 ### Pré-Requisitos
 
-> ╚ PHP 8.0+
-> ╚ PostgreSQL 13
-> ╚ Composer 2.2.4
-> ╚ Git
+> ╚ PHP 8.0+<br>
+> ╚ PostgreSQL 13<br>
+> ╚ Composer 2.2.4<br>
+> ╚ Git<br>
 
 ## Modo de Instalação
 
@@ -27,7 +27,7 @@ ou
 
 O mesmo baixará todas os pacotes necessários para rodar a aplicação
 
-> '$ composer install'
+> $ composer install
 
 ###### 3º Iremos configurar nosso .env para conexão do banco de dados
 
@@ -41,7 +41,7 @@ Você deverá antes de alterar esse arquivo, em seu servidor PostgreSQL, criar u
 
 No seu terminal, você deverá usar o comando abaixo para criação do database da aplicação.
 
-> '$ php bin/console doctrine:database:create'
+> $ php bin/console doctrine:database:create
 
 Assim, será criado o database principal e após isso poderemos criar nossas tabelas.
 
@@ -49,7 +49,7 @@ Assim, será criado o database principal e após isso poderemos criar nossas tab
 
 Com nosso database criado e nossas bibliotecas instaladas pelo composer, agora iremos rodar nossas migrations para criar nossas tabelas
 
-> '$ php bin/console doctrine:migrations:migrate'
+> $ php bin/console doctrine:migrations:migrate
 
 Lembrando que as nossas migrations se encontram na pasta migrations/
 
