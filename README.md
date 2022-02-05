@@ -99,39 +99,39 @@ lecture_delete DELETE ANY ANY /lecture/{LectureId}<br>
 
 Exemplo de Json:
 
-> {
-> "event":
-> [
+> {<br>
+> "event":<br>
+> [<br> ><br>
 >
-> > 'title' => 'Evento PHP com Rapadura',
-> > 'date_start' => '05/02/2022 08:00:00',
-> > 'date_end' => '10/02/2022 18:00:00',
-> > 'description' => 'O melhor evento da maior comunidade de PHP do Ceará',
-> > 'status' => 1
-> > ]
-> > }
+> > 'title' => 'Evento PHP com Rapadura',<br>
+> > 'date_start' => '05/02/2022 08:00:00',<br>
+> > 'date_end' => '10/02/2022 18:00:00',<br>
+> > 'description' => 'O melhor evento da maior comunidade de PHP do Ceará',<br>
+> > 'status' => 1<br>
+> > ]<br>
+> > }<br>
 
 OBS: o status tem como seguinte referência
 
-> 1 => Agendado,
-> 2 => Em Andamento,
-> 3 => Finalizado,
-> 4 => Cancelado
+> 1 => Agendado,<br>
+> 2 => Em Andamento,<br>
+> 3 => Finalizado,<br>
+> 4 => Cancelado<br>
 
 ###### Palestras (Lectures)
 
 Exemplo de Json:
 
-> {
-> "lecture":
-> [
+> {<br>
+> "lecture":<br>
+> [<br> ><br>
 >
-> > 'event_id' => 1 (ID de evento existente),
-> > 'title' => 'Laravel para Newbies',
-> > 'date' => '10/02/2022 18:00:00',
-> > 'time_start' => '08:00:00',
-> > 'time_end' => '10:00:00',
-> > 'description' => 'Veja um pouco de laravel para você que é iniciante.',
-> > 'speaker' => 'Tito Delerino Filho'
-> > ]
-> > }
+> > 'event_id' => 1 (ID de evento existente),<br>
+> > 'title' => 'Laravel para Newbies',<br>
+> > 'date' => '10/02/2022 18:00:00',<br>
+> > 'time_start' => '08:00:00',<br>
+> > 'time_end' => '10:00:00',<br>
+> > 'description' => 'Veja um pouco de laravel para você que é iniciante.',<br>
+> > 'speaker' => 'Tito Delerino Filho'<br>
+> > ]<br>
+> > }<br>
