@@ -15,7 +15,7 @@ Dev.: Tito Delerino Filho
 
 Após a instalação dos clientes acima listados como pré-requisitos para o uso, iremos começar:
 
-###### 1º Download do Repositório:
+##### 1º Download do Repositório:
 
 > Link: https://github.com/titodelerinofilho/api_rest_events.git
 
@@ -23,13 +23,13 @@ ou
 
 > $ git clone https://github.com/titodelerinofilho/api_rest_events.git
 
-###### 2º Execução do composer
+##### 2º Execução do composer
 
 O mesmo baixará todas os pacotes necessários para rodar a aplicação
 
 > $ composer install
 
-###### 3º Iremos configurar nosso .env para conexão do banco de dados
+##### 3º Iremos configurar nosso .env para conexão do banco de dados
 
 No arquivo .env na raiz do projeto, possui a linha de configuração da conexão com o PostgreSQL, indicando o servidor, usuário, senha e o banco de dados a ser utilizado pela API.
 
@@ -39,7 +39,7 @@ OBS: Caso esteja comentado, ou seja, com um " # " antes da linha, descomente-a p
 
 Você deverá antes de alterar esse arquivo, em seu servidor PostgreSQL, criar um usuário e senha do banco de dados para podermos criar nosso banco.
 
-###### 4° Criação do schemda do banco de dados
+##### 4° Criação do schemda do banco de dados
 
 No seu terminal, você deverá usar o comando abaixo para criação do database da aplicação.
 
@@ -47,7 +47,7 @@ No seu terminal, você deverá usar o comando abaixo para criação do database 
 
 Assim, será criado o database principal e após isso poderemos criar nossas tabelas.
 
-###### 5º Execução das migrations
+##### 5º Execução das migrations
 
 Com nosso database criado e nossas bibliotecas instaladas pelo composer, agora iremos rodar nossas migrations para criar nossas tabelas
 
@@ -59,7 +59,7 @@ Lembrando que as nossas migrations se encontram na pasta migrations/
 
 Agora nossa aplicação está pronta para ser utilizada, abaixo, segue as rotas para utilização.
 
-###### Eventos
+##### Eventos
 
 event_index = Listar todos os eventos<br>
 event_showOnly = Listar um evento (busca por ID)<br>
@@ -75,7 +75,7 @@ event_create POST ANY ANY /event/<br>
 event_update PUT|PATCH ANY ANY /event/{EventId}<br>
 event_delete DELETE ANY ANY /event/{EventId}<br>
 
-###### Palestras
+##### Palestras
 
 lecture_index = Listar todos as palestras<br>
 lecture_showOnly = Listar uma palestra (busca por ID)<br>
@@ -95,9 +95,9 @@ lecture_delete DELETE ANY ANY /lecture/{LectureId}<br>
 
 ### Recomendamos o uso do POSTMAN
 
-###### Para testes, segue abaixo a estrutura de nossas tabelas;
+##### Para testes, segue abaixo a estrutura de nossas tabelas;
 
-###### Events
+##### Events
 
 Exemplo de Json:
 
@@ -120,7 +120,7 @@ OBS: o status tem como seguinte referência
 > 3 => Finalizado,<br>
 > 4 => Cancelado<br>
 
-###### Palestras (Lectures)
+##### Palestras (Lectures)
 
 Exemplo de Json:
 
