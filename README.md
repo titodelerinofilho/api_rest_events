@@ -107,7 +107,7 @@ Exemplo de Json:
 
 {<br>
 "event":<br>
-[<br> ><br>
+[<br><br>
 'title' => 'Evento PHP com Rapadura',<br>
 'date_start' => '05/02/2022 08:00:00',<br>
 'date_end' => '10/02/2022 18:00:00',<br>
@@ -129,7 +129,7 @@ Exemplo de Json:
 
 {<br>
 "lecture":
-[
+[<br>
 'event_id' => 1 (ID de evento existente),<br>
 'title' => 'Laravel para Newbies',<br>
 'date' => '10/02/2022 18:00:00',<br>
