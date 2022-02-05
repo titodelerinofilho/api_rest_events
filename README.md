@@ -59,32 +59,32 @@ Agora nossa aplicação está pronta para ser utilizada, abaixo, segue as rotas 
 
 ###### Eventos
 
-event_index = Listar todos os eventos
-event_showOnly = Listar um evento (busca por ID)
-event_create = Criar um evento
-event_update = Atualizar dados de um evento (por id)
-event_delete = Deletar um evento e todas as suas palestras (por id)
+event_index = Listar todos os eventos<br>
+event_showOnly = Listar um evento (busca por ID)<br>
+event_create = Criar um evento<br>
+event_update = Atualizar dados de um evento (por id)<br>
+event_delete = Deletar um evento e todas as suas palestras (por id)<br>
 
 Descrição
 
-event_index GET ANY ANY /event/
-event_showOnly GET ANY ANY /event/{EventId}
-event_create POST ANY ANY /event/
-event_update PUT|PATCH ANY ANY /event/{EventId}
-event_delete DELETE ANY ANY /event/{EventId}
+event_index GET ANY ANY /event/<br>
+event_showOnly GET ANY ANY /event/{EventId}<br>
+event_create POST ANY ANY /event/<br>
+event_update PUT|PATCH ANY ANY /event/{EventId}<br>
+event_delete DELETE ANY ANY /event/{EventId}<br>
 
 ###### Palestras
 
-lecture_index = Listar todos as palestras
-lecture_showOnly = Listar uma palestra (busca por ID)
-lecture_create = Criar uma palestra
-lecture_update = Atualizar dados de uma palestra (por id)
-lecture_delete = Deletar uma palestra (por id)
+lecture_index = Listar todos as palestras<br>
+lecture_showOnly = Listar uma palestra (busca por ID)<br>
+lecture_create = Criar uma palestra<br>
+lecture_update = Atualizar dados de uma palestra (por id)<br>
+lecture_delete = Deletar uma palestra (por id)<br>
 
 Descrição
 
-lecture_index GET ANY ANY /lecture/
-lecture_showOnlyLecture GET ANY ANY /lecture/{LectureId}
-lecture_create POST ANY ANY /lecture/
-lecture_update PUT|PATCH ANY ANY /lecture/{LectureId}
-lecture_delete DELETE ANY ANY /lecture/{LectureId}
+lecture_index GET ANY ANY /lecture/<br>
+lecture_showOnlyLecture GET ANY ANY /lecture/{LectureId}<br>
+lecture_create POST ANY ANY /lecture/<br>
+lecture_update PUT|PATCH ANY ANY /lecture/{LectureId}<br>
+lecture_delete DELETE ANY ANY /lecture/{LectureId}<br>
