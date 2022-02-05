@@ -59,6 +59,10 @@ Com nosso database criado e nossas bibliotecas instaladas pelo composer, agora i
 
 Lembrando que as nossas migrations se encontram na pasta migrations/
 
+## Symfony CLI
+
+Para testes, recomendamos o uso do Symfony CLI para iniciar o servidor local, mais fácil e prático.
+
 ## Finalização
 
 Agora nossa aplicação está pronta para ser utilizada, abaixo, segue as rotas para utilização.
