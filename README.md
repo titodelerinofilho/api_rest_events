@@ -1,4 +1,4 @@
-# API-REST Eventos e Palestras
+# API-REST Eventos e Palestras | Symfony 5
 
 ## API para criação de eventos e palestras pertencentes aos eventos.
 
@@ -6,34 +6,34 @@ Dev.: Tito Delerino Filho
 
 ### Pré-Requisitos
 
-╚ PHP 8.0+
-╚ PostgreSQL 13
-╚ Composer 2.2.4
-╚ Git
+> ╚ PHP 8.0+
+> ╚ PostgreSQL 13
+> ╚ Composer 2.2.4
+> ╚ Git
 
-### Modo de Instalação
+## Modo de Instalação
 
 Após a instalação dos clientes acima listados como pré-requisitos para o uso, iremos começar:
 
 ###### 1º Download do Repositório:
 
-Link: https://github.com/titodelerinofilho/api_rest_events.git
+> Link: https://github.com/titodelerinofilho/api_rest_events.git
 
 ou
 
-'$ git clone https://github.com/titodelerinofilho/api_rest_events.git'
+> '$ git clone https://github.com/titodelerinofilho/api_rest_events.git'
 
 ###### 2º Execução do composer
 
 O mesmo baixará todas os pacotes necessários para rodar a aplicação
 
-'$ composer install'
+> '$ composer install'
 
 ###### 3º Iremos configurar nosso .env para conexão do banco de dados
 
 No arquivo .env na raiz do projeto, possui a linha de configuração da conexão com o PostgreSQL, indicando o servidor, usuário, senha e o banco de dados a ser utilizado pela API.
 
-** DATABASE_URL="postgresql://postgres:8y17tzps@127.0.0.1:5432/api_events?serverVersion=13&charset=utf8" **
+> ** DATABASE_URL="postgresql://postgres:8y17tzps@127.0.0.1:5432/api_events?serverVersion=13&charset=utf8" **
 
 Você deverá antes de alterar esse arquivo, em seu servidor PostgreSQL, criar um usuário e senha do banco de dados para podermos criar nosso banco.
 
@@ -41,7 +41,7 @@ Você deverá antes de alterar esse arquivo, em seu servidor PostgreSQL, criar u
 
 No seu terminal, você deverá usar o comando abaixo para criação do database da aplicação.
 
-'$ php bin/console doctrine:database:create'
+> '$ php bin/console doctrine:database:create'
 
 Assim, será criado o database principal e após isso poderemos criar nossas tabelas.
 
@@ -49,7 +49,7 @@ Assim, será criado o database principal e após isso poderemos criar nossas tab
 
 Com nosso database criado e nossas bibliotecas instaladas pelo composer, agora iremos rodar nossas migrations para criar nossas tabelas
 
-'$ php bin/console doctrine:migrations:migrate'
+> '$ php bin/console doctrine:migrations:migrate'
 
 Lembrando que as nossas migrations se encontram na pasta migrations/
 
@@ -88,3 +88,50 @@ lecture_showOnlyLecture GET ANY ANY /lecture/{LectureId}<br>
 lecture_create POST ANY ANY /lecture/<br>
 lecture_update PUT|PATCH ANY ANY /lecture/{LectureId}<br>
 lecture_delete DELETE ANY ANY /lecture/{LectureId}<br>
+
+## Testes da API
+
+### Recomendamos o uso do POSTMAN
+
+###### Para testes, segue abaixo a estrutura de nossas tabelas;
+
+###### Events
+
+Exemplo de Json:
+
+> {
+> "event":
+> [
+>
+> > 'title' => 'Evento PHP com Rapadura',
+> > 'date_start' => '05/02/2022 08:00:00',
+> > 'date_end' => '10/02/2022 18:00:00',
+> > 'description' => 'O melhor evento da maior comunidade de PHP do Ceará',
+> > 'status' => 1
+> > ]
+> > }
+
+OBS: o status tem como seguinte referência
+
+> 1 => Agendado,
+> 2 => Em Andamento,
+> 3 => Finalizado,
+> 4 => Cancelado
+
+###### Palestras (Lectures)
+
+Exemplo de Json:
+
+> {
+> "lecture":
+> [
+>
+> > 'event_id' => 1 (ID de evento existente),
+> > 'title' => 'Laravel para Newbies',
+> > 'date' => '10/02/2022 18:00:00',
+> > 'time_start' => '08:00:00',
+> > 'time_end' => '10:00:00',
+> > 'description' => 'Veja um pouco de laravel para você que é iniciante.',
+> > 'speaker' => 'Tito Delerino Filho'
+> > ]
+> > }
