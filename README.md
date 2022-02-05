@@ -21,7 +21,7 @@ Após a instalação dos clientes acima listados como pré-requisitos para o uso
 
 ou
 
-> '$ git clone https://github.com/titodelerinofilho/api_rest_events.git'
+> $ git clone https://github.com/titodelerinofilho/api_rest_events.git
 
 ###### 2º Execução do composer
 
@@ -33,7 +33,9 @@ O mesmo baixará todas os pacotes necessários para rodar a aplicação
 
 No arquivo .env na raiz do projeto, possui a linha de configuração da conexão com o PostgreSQL, indicando o servidor, usuário, senha e o banco de dados a ser utilizado pela API.
 
-> ** DATABASE_URL="postgresql://postgres:8y17tzps@127.0.0.1:5432/api_events?serverVersion=13&charset=utf8" **
+> DATABASE_URL="postgresql://postgres:8y17tzps@127.0.0.1:5432/api_events?serverVersion=13&charset=utf8"
+
+OBS: Caso esteja comentado, ou seja, com um " # " antes da linha, descomente-a para o bom funcionamento.
 
 Você deverá antes de alterar esse arquivo, em seu servidor PostgreSQL, criar um usuário e senha do banco de dados para podermos criar nosso banco.
 
