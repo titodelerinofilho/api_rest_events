@@ -109,13 +109,13 @@ Exemplo de Json:
 > "event":<br>
 > [<br> ><br>
 >
-> > 'title' => 'Evento PHP com Rapadura',<br>
-> > 'date_start' => '05/02/2022 08:00:00',<br>
-> > 'date_end' => '10/02/2022 18:00:00',<br>
-> > 'description' => 'O melhor evento da maior comunidade de PHP do Ceará',<br>
-> > 'status' => 1<br>
-> > ]<br>
-> > }<br>
+> 'title' => 'Evento PHP com Rapadura',<br>
+> 'date_start' => '05/02/2022 08:00:00',<br>
+> 'date_end' => '10/02/2022 18:00:00',<br>
+> 'description' => 'O melhor evento da maior comunidade de PHP do Ceará',<br>
+> 'status' => 1<br>
+> ]<br>
+> }<br>
 
 OBS: o status tem como seguinte referência
 
@@ -132,12 +132,12 @@ Exemplo de Json:
 > "lecture":<br>
 > [<br> ><br>
 >
-> > 'event_id' => 1 (ID de evento existente),<br>
-> > 'title' => 'Laravel para Newbies',<br>
-> > 'date' => '10/02/2022 18:00:00',<br>
-> > 'time_start' => '08:00:00',<br>
-> > 'time_end' => '10:00:00',<br>
-> > 'description' => 'Veja um pouco de laravel para você que é iniciante.',<br>
-> > 'speaker' => 'Tito Delerino Filho'<br>
-> > ]<br>
-> > }<br>
+> 'event_id' => 1 (ID de evento existente),<br>
+> 'title' => 'Laravel para Newbies',<br>
+> 'date' => '10/02/2022 18:00:00',<br>
+> 'time_start' => '08:00:00',<br>
+> 'time_end' => '10:00:00',<br>
+> 'description' => 'Veja um pouco de laravel para você que é iniciante.',<br>
+> 'speaker' => 'Tito Delerino Filho'<br>
+> ]<br>
+> }<br>
