@@ -33,7 +33,11 @@ O mesmo baixará todas os pacotes necessários para rodar a aplicação
 
 No arquivo .env na raiz do projeto, possui a linha de configuração da conexão com o PostgreSQL, indicando o servidor, usuário, senha e o banco de dados a ser utilizado pela API.
 
-> DATABASE_URL="postgresql://postgres:8y17tzps@127.0.0.1:5432/api_events?serverVersion=13&charset=utf8"
+> DATABASE_URL="postgresql://USUARIO:SENHA@127.0.0.1:5432/api_events?serverVersion=13&charset=utf8"
+
+> api_events = NOME DO DATABASE
+
+OBS: Fique a vontade caso queira dar outro nome ao seu database.
 
 OBS: Caso esteja comentado, ou seja, com um " # " antes da linha, descomente-a para o bom funcionamento.
 
